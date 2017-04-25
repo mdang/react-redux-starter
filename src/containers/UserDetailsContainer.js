@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import UserDetails from '../components/UserDetails';
 
 // "state.activeUser" is set in reducers/index.js
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     user: state.activeUser
   };

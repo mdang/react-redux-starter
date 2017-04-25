@@ -6,7 +6,7 @@ import Users from '../components/Users'
 
 // Get app state and pass it as props to Users
 //  whenever state changes, the Users will automatically re-render
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     users: state.users
   };
@@ -14,8 +14,8 @@ function mapStateToProps(state) {
 
 // Get actions and pass them as props to to Users
 //  now Users has this.props.selectUser
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectUser: selectUser }, dispatch);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ selectUser }, dispatch);
 }
 
 // We don't want to return the plain Users (component) anymore, we want to return the smart Container
