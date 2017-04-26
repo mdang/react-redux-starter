@@ -1,4 +1,4 @@
-import * as types from '../constants/ActionTypes';
+import * as types from '../constants/action_types';
 
 export const selectUser = (user) => {
   console.log('You clicked on user: ', user);
