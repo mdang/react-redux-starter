@@ -1,12 +1,10 @@
-export const actionTypes = {
-  USER_SELECTED: 'USER_SELECTED'
-};
+import * as types from '../constants/ActionTypes';
 
 export const selectUser = (user) => {
   console.log('You clicked on user: ', user);
 
   return {
-    type: actionTypes.USER_SELECTED,
+    type: types.USER_SELECTED,
     payload: user
   }
 };

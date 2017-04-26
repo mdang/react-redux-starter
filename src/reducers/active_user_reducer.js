@@ -1,8 +1,8 @@
-import { actionTypes } from '../actions';
+import * as types from '../constants/ActionTypes';
 
 export default (state=null, action) => {
   switch (action.type) {
-    case actionTypes.USER_SELECTED:
+    case types.USER_SELECTED:
       return action.payload;
     default:
       return state;
